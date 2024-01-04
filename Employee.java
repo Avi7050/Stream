@@ -1,8 +1,9 @@
 public class Employee {
-    int id;
+    Integer id;
     String name;
-    int salary;
-    public Employee(int id, String name, int salary) {
+    Double salary;
+    
+    public Employee(Integer id, String name, Double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -11,10 +12,10 @@ public class Employee {
     public String toString() {
         return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
     }
-    public int getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
     public String getName() {
@@ -23,10 +24,10 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
-    public int getSalary() {
+    public Double getSalary() {
         return salary;
     }
-    public void setSalary(int salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
     
