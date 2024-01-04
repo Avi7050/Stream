@@ -5,22 +5,18 @@ class Emp {
     int id;
     String name;
     double salary;
-
     public Emp(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
-
     @Override
     public String toString() {
         return "Emp [id=" + id + ", name=" + name + ", salary=" + salary + "]";
     }
-
     public boolean salaryCheck() {
         return this.salary > 20000;
     }
-
     public boolean nameCheck() {
         return this.name.startsWith("A");
     }
