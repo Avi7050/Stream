@@ -8,6 +8,12 @@ public class Employee {
         this.name = name;
         this.salary = salary;
     }
+    public boolean checkSalary(){
+        return this.salary > 25000;
+    }  
+    public double increaseSal(){
+        return this.salary + 500;
+    } 
     @Override
     public String toString() {
         return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
