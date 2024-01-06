@@ -5,5 +5,7 @@ public class Emp {
         this.name = name;
         this.age = age;
     }
-    
+    public int newAge(){
+        return this.age + 2;
+    }
 }

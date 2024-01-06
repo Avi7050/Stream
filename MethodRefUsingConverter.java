@@ -25,5 +25,13 @@ public class MethodRefUsingConverter {
         System.out.println("Print the given string in Upper Case Character: ");
         List<String> upperCase = MethodRefUsingConverter.stringUpperCase(names);
         System.out.println(upperCase);
+        System.out.println("Print the age by increasing 2 in all the employee object: ");
+        List<Emp> emps = List.of(new Emp("avinash", 22),
+                                new Emp("akash", 24),
+                                new Emp("anuradha", 23),
+                                new Emp("anjali", 25));
+                emps.stream().map(emp -> emp.age + 2).forEach(age -> System.out.println(age));
+        System.out.println("Using Custom method Print the age by increasing 2 in all the employee object: ");
+        emps.stream().map(Emp::newAge).forEach(System.out::println);
     }
 }
