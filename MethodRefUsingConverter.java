@@ -10,6 +10,9 @@ public class MethodRefUsingConverter {
         return names.stream().map(String::length).collect(Collectors.toList());
     }
 
+    public static List<String> stringUpperCase(List<String> names){
+        return names.stream().map(String::toUpperCase).collect(Collectors.toList());
+    }
     public static void main(String[] args) {
         System.out.println("Converting the given the number in string format to Integer format: ");
         List<String> stringNumber = List.of("1", "2", "3", "4", "5");
@@ -19,5 +22,8 @@ public class MethodRefUsingConverter {
         List<String> names = List.of("avinash", "akash", "anamika", "arbind");
         List<Integer> length = MethodRefUsingConverter.stringLength(names);
         System.out.println(length);
+        System.out.println("Print the given string in Upper Case Character: ");
+        List<String> upperCase = MethodRefUsingConverter.stringUpperCase(names);
+        System.out.println(upperCase);
     }
 }
